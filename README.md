@@ -12,3 +12,12 @@
 - Example 2:
 	- Input: flowerbed = [1,0,0,0,1], n = 2
 	- Output: false
+
+- Hints:
+	- Create a foreach loop to go over each plot.
+	- Check if the current plot is empty.
+	- Check left neighbor (or if it's the first plot).
+	- Check right neighbor (or if it's the last plot).
+	- If both neighbors are empty (or out of bounds), plant the flower and decrement the count of flowers to plant.
+	- If we have planted enough flowers, return true.
+	- If the loop finishes and we still need to plant more flowers, return false.
